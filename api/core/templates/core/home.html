@@ -1,0 +1,59 @@
+<!--home.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="section">
+
+  <div class="container">
+
+    <form action="{{ url_for('core.home') }}" method="POST">
+
+      <div class="field">
+        <label class="label">First Name</label>
+        <div class="control">
+          <input class="input" name="fname" type="text" placeholder="e.g Alex ">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Last Name</label>
+        <div class="control">
+          <input class="input" name="lname" type="text" placeholder="e.g Smith">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Age</label>
+        <div class="control">
+          <input class="input" name="age" type="text" placeholder="e.g 32">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Gender</label>
+        <div class="control">
+          <input class="input" name="gender" type="text" placeholder="e.g female">
+        </div>
+      </div>
+
+      <div class="control">
+        <button class="button is-primary">Submit</button>
+      </div>
+
+
+
+    </form>
+
+
+
+
+  </div>
+
+
+
+</section>
+
+
+{% endblock %}
